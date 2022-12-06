@@ -1,21 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-nav{
-    text-align: center;
-    position: relative;
-    top: -10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
-    background-color: purple;
-    height: 100px;
-    color: white;
-}
-body{
     font-family: sans-serif;
 }
-.input {
-    text-align: center;
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(circle, #befffb 0%, #74cac5 51%, #7f70f8 90%, #8861ff 100% );
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.weather {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.search_weather {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 20px;
+    color: inherit;
+    
 }
