@@ -13,7 +13,9 @@
 
 <body>
     <div class="weather">
-        <input type="search" class="search_weather" placeholder="Your City">
+        <input type="search" class="search_weather" id="User-search" placeholder="Your City"> <br>
+       <!-- <button class="btn">Enter</button>
+ --> 
         <div class="todays_weather">
             <div class="weather_details"></div>
             <h2 class="city_weather">City</h2>
@@ -24,8 +26,8 @@
                 <p class="weather_indicator weather__indicator--pressure"><span class="value">1050</span>hPa</p>
             </div>
         </div>
-            <img src="./Assets/Clear-skies.png" alt="sunny" class="weather_image">
-            <div class="weather_temperature"><span class="value">+25</span>&deg;C</div>
+        <div class="weather_temperature"><img src="./Assets/Clear-skies.png" alt="sunny" class="weather_image">
+            <div class="weather_temperature"><span class="value">+25</span> &deg;C</div>
         </div>
         <div class="weather_forecast">
             <article class="weather_forecast_list">
@@ -59,7 +61,7 @@
             </article>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

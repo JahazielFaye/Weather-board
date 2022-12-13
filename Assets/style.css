@@ -26,25 +26,45 @@ body {
     color: inherit;
     margin-bottom: 20px;
 }
+.btn{
+    width: 75px;
+    padding: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 18px;
+   position: relative;
+   right: -480px;
+    
+}
 
 .search_weather::placeholder {
     color: #fff;
 }
 
 .todays_weather {
-    display: flexbox;
+    font-size: 20px;
+    display:inline-flexbox;
     flex-wrap: wrap;
+    position:initial;
+    left:-20px;
     justify-content: space-between;
 }
+.weather_temperature {
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
 
 .city_weather {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 600;
     margin: 20px 0;
 }
 
 .weather_day {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
     font-weight: 400;
 }
@@ -68,10 +88,6 @@ body {
 .weather__indicator--pressure::before {
     background-image: url(./pressure.png)
 }
-.weather_temperature {
-    font-size: 60px;
-    
-}
 .weather_forecast {
    width: 100%;
    text-align: center;
@@ -85,23 +101,23 @@ body {
 .weather_forecast_list {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    margin: 0 100px 100px;
-    padding: 35px 7px 20px;
+    margin: 0 10px 10px;
+    padding: 30px 5px 20px;
     box-sizing:border-box;
     min-width: 150px;
-    width: calc(20% -20px);
+    width: calc(20% - 20px);
     flex-grow: 1;
 }
 
 .weather_image {
-    width: 30vmin;
-    align-self: center;
+   width: 30vmin;
+    align-items: center;
 }
 
 .city_weather {
     font-size: 36px;
-    font-weight: 550;
-    margin: 14px 0;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
 .weather_day {
