@@ -13,9 +13,8 @@
 
 <body>
     <div class="weather">
-        <input type="search" class="search_weather" id="User-search" placeholder="Your City"> <br>
-       <!-- <button class="btn">Enter</button>
- --> 
+        <input type="search" list="suggestions" class="search_weather" id="User-search" placeholder="Your City"> 
+       <datalist id="suggestions"></datalist>
         <div class="todays_weather">
             <div class="weather_details"></div>
             <h2 class="city_weather">City</h2>
@@ -31,35 +30,36 @@
         </div>
         <div class="weather_forecast">
             <article class="weather_forecast_list">
-                <img src="./Assets/Clear-skies.png" alt="sunny" class="weather_forecast_icon">
-                <h3 class="weather_forecast_day">Day</h3>
-                <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
+              <img src="./Assets/Clear-skies.png" alt="sunny" class="weather_forecast_icon">
+              <h3 class="weather_forecast_day">Day</h3>
+              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
             </article>
-
+          
             <article class="weather_forecast_list">
-                <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
-                <h3 class="weather_forecast_day">Day</h3>
-                <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
+              <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
+              <h3 class="weather_forecast_day">Day</h3>
+              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
             </article>
-
+          
             <article class="weather_forecast_list">
-                <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
-                <h3 class="weather_forecast_day">Day</h3>
-                <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
+              <img src="./Assets/cloudy.png" alt="cloudy" class="weather_forecast_icon">
+              <h3 class="weather_forecast_day">Day</h3>
+              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
             </article>
-
+          
             <article class="weather_forecast_list">
-                <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
-                <h3 class="weather_forecast_day">Day</h3>
-                <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
+              <img src="./Assets/rain.png" alt="rainy" class="weather_forecast_icon">
+              <h3 class="weather_forecast_day">Day</h3>
+              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
             </article>
-
+          
             <article class="weather_forecast_list">
-                <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
-                <h3 class="weather_forecast_day">Day</h3>
-                <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
+              <img src="./Assets/storm.png" alt="thunderstorm" class="weather_forecast_icon">
+              <h3 class="weather_forecast_day">Day</h3>
+              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
             </article>
-        </div>
+          </div>
+          
     </div>
     <script src="script.js"></script>
 </body>
