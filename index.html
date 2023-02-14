@@ -2,66 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title>Weather-Board</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather board</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <div class="weather">
-        <input type="search" list="suggestions" class="search_weather" id="User-search" placeholder="Your City"> 
-       <datalist id="suggestions"></datalist>
-        <div class="todays_weather">
-            <div class="weather_details"></div>
-            <h2 class="city_weather">City</h2>
-            <p class="weather_day">Day</p>
-            <div class="current_weather">
-                <p class="weather_indicator weather__indicator--humidity"><span class="value">50</span>%</p>
-                <p class="weather_indicator weather__indicator--wind"><span class="value">West, 5</span>m/s</p>
-                <p class="weather_indicator weather__indicator--pressure"><span class="value">1050</span>hPa</p>
-            </div>
+<body class="container">
+  
+  <div class="row">
+      
+      <div class="column col-3">
+        <form>
+          <label class="text-primary">Your City:</label>
+          <input class="form-control my-2 text-primary" type="search" placeholder="Search" id="city-input">
+          <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="search-button">Enter City</button>
+        </form>
+
+        <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="clear-button">Clear History</button>
+        
+        <div class="border-top border-primary" id="past-searches">
+          <!-- Past city searches will go here  -->
         </div>
-        <div class="weather_temperature"><img src="./Assets/Clear-skies.png" alt="sunny" class="weather_image">
-            <div class="weather_temperature"><span class="value">+25</span> &deg;C</div>
-        </div>
-        <div class="weather_forecast">
-            <article class="weather_forecast_list">
-              <img src="./Assets/Clear-skies.png" alt="sunny" class="weather_forecast_icon">
-              <h3 class="weather_forecast_day">Day</h3>
-              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
-            </article>
-          
-            <article class="weather_forecast_list">
-              <img src="./Assets/Clear-skies.png" alt="clear sky" class="weather_forecast_icon">
-              <h3 class="weather_forecast_day">Day</h3>
-              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
-            </article>
-          
-            <article class="weather_forecast_list">
-              <img src="./Assets/cloudy.png" alt="cloudy" class="weather_forecast_icon">
-              <h3 class="weather_forecast_day">Day</h3>
-              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
-            </article>
-          
-            <article class="weather_forecast_list">
-              <img src="./Assets/rain.png" alt="rainy" class="weather_forecast_icon">
-              <h3 class="weather_forecast_day">Day</h3>
-              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
-            </article>
-          
-            <article class="weather_forecast_list">
-              <img src="./Assets/storm.png" alt="thunderstorm" class="weather_forecast_icon">
-              <h3 class="weather_forecast_day">Day</h3>
-              <p class="weather-forecast-temperature"><span class="value">+25</span>&deg;C</p>
-            </article>
-          </div>
-          
-    </div>
-    <script src="script.js"></script>
+
+      </div>
+
+      <div class="column col-9">
+        <div class="row" id="currentConditions"></div>
+        <!-- Current city current weather conditions will go here  -->
+        
+        <div class="row" id="fiveDayForecastHeader"></div>
+        <div class="d-flex flex-row flex-wrap justify-content-between" id="fiveDayForecast"></div>
+        <!-- Current city 5 day forecast will go here  -->
+      </div>
+
+  </div>
 </body>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<script src="./assets/js/script.js"></script>
+
 </html>
+
