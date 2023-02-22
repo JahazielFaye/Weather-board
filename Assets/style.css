@@ -1,127 +1,61 @@
+/* Add some margin between the body and the top of the page */
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-image: radial-gradient(circle, #befffb 0%, #74cac5 51%, #7f70f8 90%, #8861ff 100%);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 22px;
+  margin-top: 20px;
+  background-color: black;
 }
 
-.weather {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    box-sizing: border-box;
-    white-space: nowrap;
-}
-
-.search_weather {
-    width: 100%;
-    padding: 15px 10px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.15);
-    font-size: 20px;
-    color: inherit;
-    margin-bottom: 20px;
-}
-.btn{
-    width: 75px;
-    padding: 6px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.15);
-    font-size: 18px;
-   position: relative;
-   right: -480px;
-    
-}
-
-.search_weather::placeholder {
-    color: #fff;
-}
-
-.todays_weather {
-    font-size: 20px;
-    display:inline-flexbox;
-    flex-wrap: wrap;
-    position:initial;
-    left:-20px;
-    justify-content: space-between;
-}
-.weather_temperature {
-    font-size: 20px;
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+/* Add some margin between the h1 and the container */
+h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 20px;
+  box-shadow: 2px 2px 4px rgba(157, 154, 164, 0.5);
+  color: rgb(115, 188, 251);
 }
 
 
-.city_weather {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 20px 0;
+/* Add some padding to the container */
+.container {
+  padding: 20px;
+  color:rgb(84, 139, 186);
 }
 
-.weather_day {
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: 400;
+/* Add some margin between the rows */
+.row {
+  margin-bottom: 20px;
+  color:rgb(237, 240, 246);
+
 }
 
-.weather_indicator::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-right: 10px;
+/* Add some margin and padding to the search city box */
+.col-sm-4 {
+  margin-bottom: 20px;
+  padding: 20px;
+  color:rgb(91, 132, 193);
+
 }
 
-.weather__indicator--humidity::before {
-    background-image: url(./humidity.png);
-}
-.weather__indicator--wind::before {
-    background-image: url(./wind-icon-rooster.png);
-}
-.weather__indicator--pressure::before {
-    background-image: url(./pressure.png)
-}
-.weather_forecast {
-   width: 100%;
-   text-align: center;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-.weather_forecast_icon {
-    max-width: 50%;
-}
-.weather_forecast_list {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    margin: 0 10px 10px;
-    padding: 30px 5px 20px;
-    box-sizing:border-box;
-    min-width: 150px;
-    width: calc(20% - 20px);
-    flex-grow: 1;
+/* Add some margin to the Clear history button */
+#clear-history {
+  margin-bottom: 10px;
+  background-color: rgb(91, 132, 193);
+  border-color: black;
 }
 
-.weather_image {
-   width: 30vmin;
-    align-items: center;
+/* Add some margin to the current weather section */
+#current-weather {
+  margin-bottom: 20px;
 }
 
-.city_weather {
-    font-size: 36px;
-    font-weight: 600;
-    margin: 20px 0;
+/* Add some margin to the future weather section */
+#future-weather {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
 }
 
-.weather_day {
-    font-size: 30px;
-    margin: 10px 0;
-    font-weight: 400;
+/* Add some margin between the forecast cards */
+.forecast {
+  margin-right: 20px;
+  color:rgb(91, 132, 193);
+
 }
