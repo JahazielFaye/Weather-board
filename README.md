@@ -18,10 +18,16 @@ A weather dashboard that allows users to search for a city and view the current 
 - JavaScript
 - OpenWeatherMap API
 
+## Usage
+Deployed Page:
+
+https://jahazielfaye.github.io/Weather-board/
+
 ## Installation
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/JahazielFaye/Weather-board
+
 
