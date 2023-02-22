@@ -4,7 +4,6 @@ body {
   background-color: black;
 }
 
-/* Add some margin between the h1 and the container */
 h1 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-left: 20px;
@@ -13,7 +12,6 @@ h1 {
 }
 
 
-/* Add some padding to the container */
 .container {
   padding: 20px;
   color:rgb(84, 139, 186);
@@ -45,7 +43,7 @@ h1 {
 }
 
 
-/* Add some margin to the Clear history button */
+/*  Clear history button */
 #clear-history {
   margin-bottom: 10px;
   background-color: rgb(91, 132, 193);
@@ -57,14 +55,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Add some margin to the future weather section */
 #future-weather {
   margin-top: 20px;
   margin-bottom: 20px;
   
 }
 
-/* Add some margin between the forecast cards */
+
 .forecast {
   margin-right: 20px;
   color:rgb(91, 132, 193);
