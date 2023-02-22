@@ -15,11 +15,11 @@
 
 <body>
   <h1>WEATHER BOARD</h1>
+  <!--Container that holds input text/ clear history/ search-history-->
   <div class="container">
-    <!--Row for searching a city-->
+
     <div class="row">
       <div class="col-sm-4 bg-dark">
-        <!--Here we create the text box for capturing the search city Name-->
 
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="search-city" aria-label="City Search"
@@ -28,12 +28,14 @@
             <button class=" btn bg-primary text-dark" id="search-button"><i class="fa fa-search"></i></button>
           </div>
         </div>
-        <!--section for search city history-->
+
+<!--Clear history button that clears inputs history-->
         <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
         <ul class="list-group">
-
         </ul>
       </div>
+
+      <!--current weather container-->
       <div class="col-sm-8">
         <div class="row ml-2 border border-dark rounded">
           <div class="col-sm-12" id="current-weather">
@@ -43,7 +45,8 @@
             <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
           </div>
         </div>
-        <!--Row for future data to be dumped here-->
+
+        <!--Week to day forecast-->
         <div class="col-sm-12" id="future-weather">
           <h3>5-Day Forecast:</h3>
           <div class="row text-light">
